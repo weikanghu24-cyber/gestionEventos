@@ -2,10 +2,6 @@
 
 Aplicación web desarrollada con **Spring Boot, JPA/Hibernate, Thymeleaf y MySQL** para la gestión de eventos y ponentes.
 
-**Alumno:** [Tu Nombre]  
-**Módulo:** Programación · C.F.G.S DAW  
-**Práctica:** UT8 – JPA · Tema 25
-
 ---
 
 ## 🚀 URL en Railway
