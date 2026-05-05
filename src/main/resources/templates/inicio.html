@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gestión de Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --primary: #1a1a2e;
+            --accent: #e94560;
+            --gold: #f5a623;
+            --light-bg: #f8f5f0;
+        }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--light-bg);
+            min-height: 100vh;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #16213e 60%, #0f3460 100%);
+            color: white;
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(233,69,96,0.2) 0%, transparent 70%);
+        }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -5%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(245,166,35,0.15) 0%, transparent 70%);
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            letter-spacing: -1px;
+        }
+        .accent-line {
+            width: 60px;
+            height: 4px;
+            background: var(--accent);
+            margin: 16px auto;
+            border-radius: 2px;
+        }
+        .foto-perfil {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--gold);
+            box-shadow: 0 0 0 8px rgba(245,166,35,0.15);
+            background: #2a2a4a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            margin: 0 auto 24px;
+        }
+        .nav-card {
+            background: white;
+            border-radius: 16px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            text-decoration: none;
+            display: block;
+            color: var(--primary);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .nav-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+            box-shadow: 0 12px 40px rgba(233,69,96,0.15);
+            color: var(--accent);
+        }
+        .nav-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .nav-card h5 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+        }
+        .nav-card p {
+            font-size: 0.85rem;
+            color: #888;
+            margin: 0;
+        }
+        .badge-custom {
+            background: var(--accent);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- HERO -->
+    <div class="hero-section">
+        <div class="container text-center position-relative" style="z-index:1;">
+            <div class="foto-perfil mx-auto mb-3">🎤</div>
+            <h1>Gestión de Eventos</h1>
+            <div class="accent-line"></div>
+            <p class="lead mb-2" style="color: rgba(255,255,255,0.8);">
+                Plataforma de gestión de eventos y ponentes
+            </p>
+            <span class="badge-custom">Weikang · DAW 2025</span>
+        </div>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <div class="container py-5">
+        <h2 class="section-title text-center mb-2">Panel de Navegación</h2>
+        <div class="accent-line mb-5"></div>
+
+        <div class="row g-4">
+            <!-- Listado Eventos -->
+            <div class="col-md-6 col-lg-3">
+                <a href="/listadoEvento" class="nav-card">
+                    <span class="icon">📅</span>
+                    <h5>Listado de Eventos</h5>
+                    <p>Ver todos los eventos registrados</p>
+                </a>
+            </div>
+
+            <!-- Listado Ponentes -->
+            <div class="col-md-6 col-lg-3">
+                <a href="/listadoPonente" class="nav-card">
+                    <span class="icon">🎙️</span>
+                    <h5>Listado de Ponentes</h5>
+                    <p>Ver todos los ponentes registrados</p>
+                </a>
+            </div>
+
+            <!-- Alta Evento -->
+            <div class="col-md-6 col-lg-3">
+                <a href="/altaEvento" class="nav-card">
+                    <span class="icon">➕</span>
+                    <h5>Alta de Evento</h5>
+                    <p>Registrar un nuevo evento</p>
+                </a>
+            </div>
+
+            <!-- Alta Ponente -->
+            <div class="col-md-6 col-lg-3">
+                <a href="/altaPonente" class="nav-card">
+                    <span class="icon">👤</span>
+                    <h5>Alta de Ponente</h5>
+                    <p>Registrar un nuevo ponente</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 mt-4" style="background: var(--primary); color: rgba(255,255,255,0.5); font-size: 0.85rem;">
+        Gestión de Eventos · C.F.G.S DAW · Spring Boot + JPA + Thymeleaf + MySQL
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
