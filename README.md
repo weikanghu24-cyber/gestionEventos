@@ -6,7 +6,7 @@ Aplicación web desarrollada con **Spring Boot, JPA/Hibernate, Thymeleaf y MySQL
 
 ## 🚀 URL en Railway
 
-**https://gestioneventos-production.up.railway.app**
+**https://gestioneventos-proyects.up.railway.app/**
 
 ---
 
