@@ -29,7 +29,7 @@ Plataforma para gestionar **eventos** (nombre, fecha, lugar, aforo) y **ponentes
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/TU-USUARIO/gestionEventos.git
+git clone https://github.com/weikanghu24-cyber/gestionEventos
 cd gestionEventos
 ```
 
