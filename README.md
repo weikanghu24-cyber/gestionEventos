@@ -1,5 +1,3 @@
-# Gestión de Eventos y Ponentes
-
 Aplicación web desarrollada con **Spring Boot, JPA/Hibernate, Thymeleaf y MySQL** para la gestión de eventos y ponentes.
 
 ---
@@ -82,6 +80,21 @@ src/main/java/pio/daw/navegaweb/
 ---
 
 ## 📸 Capturas de Pantalla
+---
+Página inicial
 <img width="1298" height="712" alt="Captura de pantalla 2026-05-08 220455" src="https://github.com/user-attachments/assets/f9d312cc-6193-4a5c-a19b-1cc7cb80b361" />
+---
+Listado de eventos
+<img width="1289" height="694" alt="Captura de pantalla 2026-05-08 220627" src="https://github.com/user-attachments/assets/dd1629bc-556d-4633-89b0-9658c012c2b5" />
+---
+Listado de ponentes
+<img width="1211" height="683" alt="Captura de pantalla 2026-05-08 220615" src="https://github.com/user-attachments/assets/7ba0c368-7c9f-4546-b97e-0cadf2925c83" />
+---
+Alta de evento
+<img width="1288" height="721" alt="Captura de pantalla 2026-05-08 220559" src="https://github.com/user-attachments/assets/a9850d89-260a-497c-87c1-84117379d470" />
+---
+Alta de ponente
+<img width="1329" height="723" alt="Captura de pantalla 2026-05-08 220543" src="https://github.com/user-attachments/assets/ece94e8f-6fc1-48a9-8a0c-00cebd82a431" />
+---
 
 
