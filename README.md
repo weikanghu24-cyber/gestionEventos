@@ -82,4 +82,6 @@ src/main/java/pio/daw/navegaweb/
 ---
 
 ## 📸 Capturas de Pantalla
+<img width="1298" height="712" alt="Captura de pantalla 2026-05-08 220455" src="https://github.com/user-attachments/assets/f9d312cc-6193-4a5c-a19b-1cc7cb80b361" />
+
 
