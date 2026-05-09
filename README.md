@@ -82,7 +82,7 @@ src/main/java/pio/daw/navegaweb/
 ## 📸 Capturas de Pantalla
 ---
 Página inicial
-<img width="1298" height="712" alt="Captura de pantalla 2026-05-08 220455" src="https://github.com/user-attachments/assets/f9d312cc-6193-4a5c-a19b-1cc7cb80b361" />
+<img width="1132" height="695" alt="Captura de pantalla 2026-05-08 220455" src="https://github.com/user-attachments/assets/dcb59812-f45a-42cd-8d83-7a20ae1bb63c" />
 ---
 Listado de eventos
 <img width="1289" height="694" alt="Captura de pantalla 2026-05-08 220627" src="https://github.com/user-attachments/assets/dd1629bc-556d-4633-89b0-9658c012c2b5" />
