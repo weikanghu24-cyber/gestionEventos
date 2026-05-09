@@ -64,6 +64,8 @@ Accede en: **http://localhost:8090/inicio**
 ---
 
 ## 🗂️ Estructura del Proyecto
+
+```
 src/main/java/pio/daw/navegaweb/
 ├── NavegawebApplication.java
 ├── model/
@@ -75,8 +77,18 @@ src/main/java/pio/daw/navegaweb/
 ├── controller/
 │   └── AppController.java
 └── runner/
-└── DataLoader.java
+    └── DataLoader.java
 
+src/main/resources/
+├── templates/
+│   ├── inicio.html
+│   ├── listadoEvento.html
+│   ├── listadoPonente.html
+│   ├── altaEvento.html
+│   ├── altaPonente.html
+│   └── error.html
+└── application.properties
+```
 ---
 
 ## 📸 Capturas de Pantalla
